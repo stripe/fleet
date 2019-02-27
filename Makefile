@@ -160,10 +160,8 @@ generate-dev: .prefix
 
 deps:
 	yarn
-	go get -u \
-		github.com/kolide/go-bindata/... \
-		github.com/golang/dep/cmd/dep \
-		github.com/groob/mockimpl
+	go install -v ./vendor/github.com/kolide/go-bindata/go-bindata
+	go install -v ./vendor/github.com/groob/mockimpl
 
 distclean:
 ifeq ($(OS), Windows_NT)

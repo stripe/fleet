@@ -1,5 +1,5 @@
 required = [
-  "github.com/kolide/go-bindata",
+  "github.com/kolide/go-bindata/go-bindata",
   "github.com/groob/mockimpl"
 ]
 
@@ -123,9 +123,17 @@ required = [
   branch = "v2"
   name = "gopkg.in/yaml.v2"
 
+[[override]]
+  name = "github.com/jteeuwen/go-bindata"
+  source = "github.com/kolide/go-bindata"
+
 [prune]
   go-tests = true
   unused-packages = true
+  [[prune.project]]
+    name = "github.com/jteeuwen/go-bindata"
+    go-tests = false
+    unused-packages = false
   [[prune.project]]
     name = "github.com/kolide/go-bindata"
     go-tests = false

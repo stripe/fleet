@@ -267,8 +267,17 @@
 [[projects]]
   branch = "master"
   digest = "1:1e8b6c2b753d460e5a1270bd88973450d8aac133f9b04242a8838fbe8234ff32"
-  name = "github.com/kolide/go-bindata"
+  name = "github.com/jteeuwen/go-bindata"
   packages = ["."]
+  pruneopts = ""
+  revision = "a0ff2567cfb70903282db057e799fd826784d41d"
+  source = "github.com/kolide/go-bindata"
+
+[[projects]]
+  branch = "master"
+  digest = "1:1e8b6c2b753d460e5a1270bd88973450d8aac133f9b04242a8838fbe8234ff32"
+  name = "github.com/kolide/go-bindata"
+  packages = ["go-bindata"]
   pruneopts = ""
   revision = "a0ff2567cfb70903282db057e799fd826784d41d"
 
@@ -718,7 +727,7 @@
     "github.com/igm/sockjs-go/sockjs",
     "github.com/jmoiron/sqlx",
     "github.com/jmoiron/sqlx/reflectx",
-    "github.com/kolide/go-bindata",
+    "github.com/kolide/go-bindata/go-bindata",
     "github.com/kolide/goose",
     "github.com/kolide/kit/env",
     "github.com/kolide/kit/version",

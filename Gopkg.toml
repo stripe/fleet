@@ -1,3 +1,8 @@
+required = [
+  "github.com/kolide/go-bindata",
+  "github.com/groob/mockimpl"
+]
+
 [[constraint]]
   branch = "master"
   name = "github.com/VividCortex/mysqlerr"
@@ -121,3 +126,7 @@
 [prune]
   go-tests = true
   unused-packages = true
+  [[prune.project]]
+    name = "github.com/kolide/go-bindata"
+    go-tests = false
+    unused-packages = false

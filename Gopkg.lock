@@ -204,6 +204,14 @@
 
 [[projects]]
   branch = "master"
+  digest = "1:9bbdba6bf5a45aeb345e9147c257e2548745c08c91dd4e29d343bdeb5dc6e87f"
+  name = "github.com/groob/mockimpl"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "dfa944a2a94022b317f9f366e855591ae30b9fd4"
+
+[[projects]]
+  branch = "master"
   digest = "1:a361611b8c8c75a1091f00027767f7779b29cb37c456a71b8f2604c88057ab40"
   name = "github.com/hashicorp/hcl"
   packages = [
@@ -255,6 +263,14 @@
   pruneopts = "UT"
   revision = "2eee05ed794112d45db504eb05aa693efd2b8b09"
   version = "v0.1.0"
+
+[[projects]]
+  branch = "master"
+  digest = "1:1e8b6c2b753d460e5a1270bd88973450d8aac133f9b04242a8838fbe8234ff32"
+  name = "github.com/kolide/go-bindata"
+  packages = ["."]
+  pruneopts = ""
+  revision = "a0ff2567cfb70903282db057e799fd826784d41d"
 
 [[projects]]
   branch = "master"
@@ -592,6 +608,27 @@
   version = "v0.3.0"
 
 [[projects]]
+  branch = "master"
+  digest = "1:e46d8e20161401a9cf8765dfa428494a3492a0b56fe114156b7da792bf41ba78"
+  name = "golang.org/x/tools"
+  packages = [
+    "go/ast/astutil",
+    "go/gcexportdata",
+    "go/internal/cgo",
+    "go/internal/gcimporter",
+    "go/internal/packagesdriver",
+    "go/packages",
+    "go/types/typeutil",
+    "imports",
+    "internal/fastwalk",
+    "internal/gopathwalk",
+    "internal/module",
+    "internal/semver",
+  ]
+  pruneopts = "UT"
+  revision = "8dcc6e70cdefe9a82236b6e195e4f4e2108fcb9f"
+
+[[projects]]
   digest = "1:c25289f43ac4a68d88b02245742347c94f1e108c534dda442188015ff80669b3"
   name = "google.golang.org/appengine"
   packages = ["cloudsql"]
@@ -677,9 +714,11 @@
     "github.com/gomodule/redigo/redis",
     "github.com/gorilla/mux",
     "github.com/gorilla/websocket",
+    "github.com/groob/mockimpl",
     "github.com/igm/sockjs-go/sockjs",
     "github.com/jmoiron/sqlx",
     "github.com/jmoiron/sqlx/reflectx",
+    "github.com/kolide/go-bindata",
     "github.com/kolide/goose",
     "github.com/kolide/kit/env",
     "github.com/kolide/kit/version",
